@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Arbeit im Umbruch</title>
+<meta name="description" content="The labour market is changing dramatically. We accompany this change with impulses and ideas and look at what becomes possible.">
+<link rel="stylesheet" href="/style.css">
+<script src="/tor.js"></script>
+</head>
+<body>
+<div id="tor"><form id="tor-form" data-fehler="The password is not correct.">
+<p style="font-family:var(--display);font-weight:900;font-size:3rem;line-height:.9;margin:0 0 .5rem">Arbeit im Umbruch</p>
+<label for="tor-pw">Hans and Stefan are shaping “Arbeit im Umbruch” here. Please be patient a little longer!<br><br>Password:</label>
+<input id="tor-pw" type="password" autocomplete="off">
+<button type="submit">View</button>
+<p class="fehler" id="tor-fehler" aria-live="polite"></p>
+</form></div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="marke" href="/en/">Arbeit im Umbruch</a>
+      <ul class="menue">
+        <li><a href="/en/#impulse">Impulses</a></li>
+        <li><a href="/en/#podcast">Podcast</a></li>
+        <li><a href="/en/#uns">About us</a></li>
+      </ul>
+      <span class="sprache"><a href="/" lang="de">DE</a> / <a href="#" aria-current="true" lang="en">EN</a></span>
+    </nav>
+    <div class="hero">
+      <h1><span>What work</span><span class="zweite">do we want?</span></h1>
+      <p>The labour market is changing dramatically. We accompany this change with impulses and ideas and look at what becomes possible.</p>
+    </div>
+  </div>
+</header>
+
+<section class="band" id="band" aria-label="Activities">
+  <div class="band-spur" aria-hidden="true">
+    <div class="band-inhalt"><span>doing laundry</span><span>writing poems</span><span>caring</span><span>programming</span><span>baking bread</span><span>listening</span><span>farming</span><span>teaching</span><span>repairing</span><span>designing</span><span>doing laundry</span><span>writing poems</span><span>caring</span><span>programming</span><span>baking bread</span><span>listening</span><span>farming</span><span>teaching</span><span>repairing</span><span>designing</span></div>
+  </div>
+  <button type="button" id="tempo" aria-pressed="false" data-langsam="Slow down" data-schnell="Speed up">Slow down</button>
+</section>
+
+<main>
+  <section class="wrap einleitung" aria-labelledby="einl">
+    <h2 id="einl">Arbeit im Umbruch</h2>
+    <div>
+      <p>Work is changing faster than it has in generations. Artificial intelligence is taking over tasks that whole professions consisted of only yesterday. Industries are reorganising, and there is much to suggest that the greater part of this change still lies ahead of us.</p><p>Whether this change will make us freer is an open question. The sociologist Hartmut Rosa has described what has almost always happened when a new technology was meant to save time. Planes take us around the world faster, and since then we travel far more. An email is quicker to write than a letter, and since then we write far more of them. The time we gained flowed into new tasks, and the pace of life kept rising.</p>
+      <blockquote>What work do we really, really want to do?</blockquote>
+      <a class="weiter" href="/en/introduction.html">Read the full text</a>
+    </div>
+  </section>
+
+  <section class="wrap impulse" id="impulse" aria-labelledby="imp">
+    <div class="kopfzeile"><h2 id="imp">Impulses</h2></div>
+    <ul class="liste">
+      <li><a href="/en/introduction.html"><span class="rubrik">Food for thought</span><span class="titel">Work in Upheaval</span><span class="autor">Hans Meves, Stefan Füsers</span></a></li>
+    </ul>
+    <p class="vorschau">The next contributions will appear here, in five sections.</p>
+    <ul class="rubrikliste"><li><h3>Food for thought</h3><p>Essays on Frithjof Bergmann, Hartmut Rosa, basic income and artificial intelligence.</p></li><li><h3>Voices</h3><p>Guest contributions from experts in research and practice.</p></li><li><h3>Places of new work</h3><p>Visits to places where people already work differently today.</p></li><li><h3>Making work visible</h3><p>Photography and actions that show what this is about.</p></li><li><h3>Finds</h3><p>Short pointers to studies, articles and debates.</p></li></ul>
+  </section>
+
+  <section class="podcast" id="podcast" aria-labelledby="pod">
+    <div class="wrap">
+      <div class="welle" aria-hidden="true">
+        <i style="height:30%"></i><i style="height:70%"></i><i style="height:45%"></i><i style="height:95%"></i><i style="height:60%"></i><i style="height:80%"></i><i style="height:35%"></i><i style="height:55%"></i><i style="height:25%"></i>
+      </div>
+      <div>
+        <h2 id="pod">Conversations about work</h2>
+        <p>In the podcast we talk with people who research work and with people who already work differently today.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap uns" id="uns" aria-labelledby="ueber">
+    <h2 id="ueber">About us</h2>
+    <div class="personen">
+      <div class="person"><h3>Hans Meves</h3><p>Co-founder of Neue Arbeit Neue Kultur Kiel e.V. (New Work New Culture Kiel). He built up the project NANK Centres Baltic Sea Region, which connected places of new work in five countries around the Baltic Sea.</p></div>
+      <div class="person"><h3>Stefan Füsers</h3><p>Has been committed to basic income for many years, today with Unconditional Basic Income Europe (UBIE). He spent eight years in the Civil Peace Service in Kosovo and Cambodia and works in systemic organisational development.</p></div>
+    </div>
+  </section>
+</main>
+<script>
+const band=document.getElementById('band'),t=document.getElementById('tempo');
+t.addEventListener('click',()=>{const an=band.classList.toggle('langsam');t.setAttribute('aria-pressed',an);t.textContent=an?t.dataset.schnell:t.dataset.langsam;});
+</script>
+<footer>
+  <div class="wrap">
+    <span>Arbeit im Umbruch</span>
+    <nav><a href="/en/imprint.html">Legal notice</a><a href="/en/privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>
