@@ -114,6 +114,27 @@ footer .marke-fuss{display:inline-flex;align-items:center;gap:.45em;white-space:
 .textseite h2{font-family:var(--display);font-weight:700;font-size:1.8rem;margin:2rem 0 .5rem}
 .textseite .autor{text-align:left;margin:0 0 2rem}
 footer a{color:#fff}
+/* Artikel */
+.artikel h1{font-size:clamp(2.3rem,5vw,3.6rem);line-height:.98}
+.textseite h2{line-height:1.05}
+.textseite .unterzeile{font-family:var(--display);font-weight:700;font-size:1.6rem;line-height:1.15;margin:-.6rem 0 2rem;color:var(--oxid)}
+.textseite ul,.textseite ol{padding-left:1.3rem}
+.textseite a{color:var(--rot)}
+.textseite .signatur{margin-top:2.5rem;font-style:italic}
+.textseite .anmerkung{font-size:.95rem;color:var(--grau);border-top:1px solid #cfc6c2;padding-top:1rem}
+.textseite sup a{text-decoration:none;font-weight:600;padding:0 .1em}
+.quellen-h{font-size:1.4rem!important}
+.quellen{font-size:.95rem;overflow-wrap:anywhere}
+.abbildung{margin:2rem 0}
+.abbildung img{display:block;width:100%;height:auto;background:#fff;border:1px solid #cfc6c2}
+.abbildung figcaption{font-size:.9rem;color:var(--grau);margin-top:.5rem}
+@media (min-width:1100px){.abbildung.breit{width:min(64rem,calc(100vw - 2*var(--gutter)))}}
+.startsatz{max-width:44rem;margin:0 0 1.5rem}
+.zurueck{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--rot);display:inline-block;margin-top:2rem}
+.person p{max-width:none}
+.person .mehr{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--rot);display:inline-block;margin-top:.8rem}
+.personen-voll .person p{margin:0 0 1em}
+.personen-voll .person a{color:var(--rot)}
 footer nav{display:flex;gap:1.2rem;flex-wrap:wrap;padding:0}
 /* Passwortabfrage */
 html.gesperrt body>*:not(#tor){display:none!important}
