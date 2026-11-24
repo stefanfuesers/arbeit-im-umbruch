@@ -136,6 +136,8 @@ footer a{color:#fff}
 .person .mehr{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--rot);display:inline-block;margin-top:.8rem}
 .personen-voll .person p{margin:0 0 1em}
 .personen-voll .person a{color:var(--rot)}
+.textseite.uns{max-width:76rem}
+@media (min-width:900px){.personen-voll{display:grid;grid-template-columns:1fr 1fr;gap:2rem calc(2*var(--gutter))}.personen-voll .person h2{margin-top:0}}
 footer nav{display:flex;gap:1.2rem;flex-wrap:wrap;padding:0}
 /* Passwortabfrage */
 html.gesperrt body>*:not(#tor){display:none!important}
